@@ -1,3 +1,4 @@
+const User = require("../models/user");
 module.exports.renderSignup = (req,res)=>{
   res.render("users/signup.ejs");
 }
@@ -25,9 +26,10 @@ module.exports.signup = async (req, res)=>
       });
   
     } catch (e) {
-      req.flash("error", e.message);
-      res.redirect("/signup");
-    }
+  console.log("SIGNUP ERROR:", e);
+  req.flash("error", e.message);
+  res.redirect("/signup");
+}
   };
 
   module.exports.login =async (req, res) => {
