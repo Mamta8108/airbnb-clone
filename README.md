@@ -1,4 +1,4 @@
-# airbnb-clone
+# Wonderlust
 Airbnb Clone – MERN Stack Project
 
 This project is a full-stack Airbnb clone developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). 
